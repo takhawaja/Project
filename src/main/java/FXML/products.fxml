@@ -42,5 +42,7 @@
             <Font name="MV Boli" size="12.0" />
          </font>
       </Label>
+      <TextField layoutX="137.0" layoutY="173.0" />
+      <TextField layoutX="139.0" layoutY="228.0" />
    </children>
 </AnchorPane>
