@@ -26,18 +26,18 @@ public class EmployeeController implements Initializable {
 
     private static final String NEW_EMPLOYEE = "New Employee";
     private static final String UPDATE_EMPLOYEE = "Update Employee";
-    private static final String DUP_EMAIL_MESSAGE = "The email provided has already been used.";
-    private static final String DUP_EMAIL_HEADER = "Duplicate Email Found";
-    private static final String VALUES_MISSING_MESSAGE = "Please provide values for all fields";
-    private static final String VALUES_MISSING_HEADER = "Required Fields Missing";
+    private static final String DUP_EMAIL_MESSAGE = "The email  has  been used.";
+    private static final String DUP_EMAIL_HEADER = "A Duplicate Email Found";
+    private static final String VALUES_MISSING_MESSAGE = "Provide values for all fields";
+    private static final String VALUES_MISSING_HEADER = "Fields Missing";
     private static final String DELETE_MESSAGE = "Are you sure you want to delete this employee?";
 
     public ListView<Employee> employeeList;
     public TextField phone;
     public TextField email;
+    public TextField firstName;
     public TextField lastName;
 
-    public TextField firstName;
     public Button btnAddEmployee;
     public Button btnDeleteEmployee;
     private Scene returnScene;

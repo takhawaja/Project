@@ -32,7 +32,6 @@ public class MainController {
         employeeController.setReturnScene(btnManageEmployees.getScene());
         parent.setScene(scene);
 
-
     }
 
     public void doCreateJobs(ActionEvent actionEvent) throws IOException {
@@ -50,7 +49,7 @@ public class MainController {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../../../FXML/products.fxml"));
         fxmlLoader.setControllerFactory(applicationContext::getBean);
         Scene scene = new Scene(fxmlLoader.load());
-        ProductComponent productComponent = fxmlLoader.getController();
+        ProductController productController = fxmlLoader.getController();
         parent.setScene(scene);
-    }
+}
 }

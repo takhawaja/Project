@@ -20,6 +20,7 @@ public class Main extends Application {
 
     @Autowired
     private EmployeeRepository employeeRepository;
+    private ProductRepository productRepository;
 
     public static void main(String[] args) {
         launch();
