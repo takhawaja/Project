@@ -27,6 +27,7 @@ public class ProductComponentTests {
         component.setWholesalePrice(new BigDecimal("10.00"));
         component.setName("A component");
         p.addComponent(component,1);
+
         assertEquals(new BigDecimal("10.00"),p.wholesaleCost());
 
     }

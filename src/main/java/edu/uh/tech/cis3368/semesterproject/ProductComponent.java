@@ -17,7 +17,7 @@ public class ProductComponent {
         this.product = product;
     }
 
-    public ProductComponent() {
+    public ProductComponent(Component component) {
     }
 
     @Id
