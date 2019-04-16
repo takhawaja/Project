@@ -44,4 +44,13 @@ public class MainController {
         jobController.setReturnScene(btnManageEmployees.getScene());
         parent.setScene(scene);
     }
+
+    public void doProducts(ActionEvent actionEvent) throws IOException {
+        Stage parent = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../../../FXML/products.fxml"));
+        fxmlLoader.setControllerFactory(applicationContext::getBean);
+        Scene scene = new Scene(fxmlLoader.load());
+        ProductComponent productComponent = fxmlLoader.getController();
+        parent.setScene(scene);
+    }
 }

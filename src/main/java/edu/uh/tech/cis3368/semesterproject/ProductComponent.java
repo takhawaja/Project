@@ -11,7 +11,7 @@ public class ProductComponent {
     private Component component;
     private Product product;
 
-    public ProductComponent(int quantity, Component component, Product product) {
+    public ProductComponent(Product product, Component component, int quantity) {
         this.quantity = quantity;
         this.component = component;
         this.product = product;

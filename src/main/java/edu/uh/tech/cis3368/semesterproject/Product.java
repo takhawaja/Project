@@ -90,9 +90,9 @@ public class Product {
         this.productComponents = productComponents;
     }
 
-    public void addComponent(Component component, int quantity) {
+    public void addComponent(Product product, Component component, int quantity) {
         ProductComponent productComponent =
-                new ProductComponent(quantity, component, this);
+                new ProductComponent(product, component,quantity);
         productComponents.add(productComponent);
         component.getProductComponents().add(productComponent);
 
