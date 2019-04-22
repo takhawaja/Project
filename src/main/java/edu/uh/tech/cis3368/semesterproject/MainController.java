@@ -19,6 +19,7 @@ public class MainController {
 
     @FXML
     private Button btnManageEmployees;
+    private Button btnProducts;
 
     @Autowired
     private ConfigurableApplicationContext applicationContext;
@@ -50,6 +51,7 @@ public class MainController {
         fxmlLoader.setControllerFactory(applicationContext::getBean);
         Scene scene = new Scene(fxmlLoader.load());
         ProductController productController = fxmlLoader.getController();
+        productController.setReturnScene(btnProducts.getScene());
         parent.setScene(scene);
 }
 }
